@@ -1,0 +1,257 @@
+@media only screen and (min-width: 768px){
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  opacity: 90%;
+  filter: brightness(90%);
+  height: 200vh;
+  background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+}
+
+
+header {
+  background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  border-radius: 150px 150px 150px 150px;
+  order: 1;
+}
+
+h1 {
+  display: flex;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #00d4ff;
+  align-content: flex-start;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 400px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00d4ff;
+}
+
+
+nav a:hover {
+  text-decoration: none;
+  color: blueviolet;
+  border: blueviolet solid 1px;
+}
+
+.main-container {
+  position: absolute;
+  top: 10%;
+  left: 38%;
+}
+
+.main-container-info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #00d4ff;
+  width: 400px;
+  height: 400px;
+  background-color: #00d4ff;
+  box-shadow: 5px 5px 1px black;
+}
+
+#aboutme {
+  position: relative;
+  top: 80%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: xx-large;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+}
+
+.second-container {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+}
+
+.second-container-info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #00d4ff;
+  width: 400px;
+  height: 400px;
+  background-color: #00d4ff;
+  box-shadow: 5px 5px 1px black;
+}
+
+#imgportfolio {
+  position: relative;
+  top: 20%;
+  border: 3px solid #090979;
+  box-shadow: 5px 5px 1px black;
+}
+
+.portfolio {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: xx-large;
+  text-align: center;
+}
+
+#discogra-search {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  background-image: url(land.jpg); 
+  background-position: top;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border:10px solid #00d4ff;
+  font:13px normal Arial, Helvetica, sans-serif;
+  line-height:18px;
+  float:left;
+  margin:0 10px 10px 0;
+}
+
+.click-me {
+  position: absolute;
+  top: 15%;
+  left: 11%;
+  font-size: 80px;
+  color: #00d4ff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.third-container {
+  position: absolute;
+  top: 50%;
+  right: 7%;
+}
+
+.third-container-info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #00d4ff;
+  width: 400px;
+  height: 400px;
+  background-color: #00d4ff;
+  box-shadow: 5px 5px 1px black;
+}
+
+
+.contact-btns {
+ position: absolute;
+ top: 80%;
+ left: 25%;
+}
+
+#btngit {
+  display: inline;
+  position: relative;
+  background: transparent;
+  border: none;
+}
+
+#btngmail {
+  display: inline;
+  position: relative;
+  left: 15%;
+  background: transparent;
+  border: none;
+}
+
+#btnlinkedin {
+  display: inline;
+  position: relative;
+  left: 30%;
+  background: transparent;
+  border: none;
+}
+
+#contact {
+  position: relative;
+  text-align: center;
+  left: 4%;
+  color: #00d4ff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 80px;
+}
+
+.portfolio-1-ss {
+  position: absolute;
+  top: 20%;
+  right: 8%;
+  background-image: url(land.jpg); 
+  background-position: top;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border:10px solid #00d4ff;
+  font:13px normal Arial, Helvetica, sans-serif;
+  line-height:18px;
+  float:left;
+  margin:0 10px 10px 0;
+}
+
+.click-me-2 {
+  position: absolute;
+  top: 15%;
+  right: 9%;
+  font-size: 80px;
+  color: #00d4ff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.img-of-me {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  background: transparent;
+}
+}
+
+@media only screen and (max-width: 480px){
+  background-color: #00d4ff;
+}
